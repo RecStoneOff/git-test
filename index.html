@@ -2,10 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="stylesheet.css" rel="stylesheet">
         <title>Document</title>
     </head>
     <body>
-        Hello world
+        <section>
+            <div class="couleur-fond"></div>
+            <select class="SelectColor" onchange="ChangeColor(this)">
+                <option value="red">Rouge</option>
+                <option value="green">Vert</option>
+                <option value="#FA1">Orange</option>
+                <option value="blue">Bleu</option>
+            </select>
+        </section>
+
+        <script>
+            function ChangeColor(get){
+                var fond =document.querySelector(".ChangeColor");
+                var SelectColor = get.value;
+                fond.style.background = SelectColor;
+            }
+        </script>
     </body>
 </html>
