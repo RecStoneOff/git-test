@@ -16,7 +16,6 @@ section {
     top: 0;
     left: 0;
     background-color: red;
-    color: red;
 }
 
 .SelectColor {
@@ -26,4 +25,5 @@ section {
     font-size: 30px;
     border-radius: 10px;
     outline: 0;
+    background-color: red;
 }
